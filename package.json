@@ -1,0 +1,20 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "Given a string text, you want to use the characters of text to form as many instances of the word \"balloon\" as possible.",
+  "main": "13-jumbled.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JideOgun/Algos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JideOgun/Algos/issues"
+  },
+  "homepage": "https://github.com/JideOgun/Algos#readme"
+}

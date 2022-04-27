@@ -1,4 +1,51 @@
-var isAnagram = function(strA, strB) {
+var isAnagram = function(a, b) {
+  if (a.length !== b.length) return false;
+  
+  let strA = {};
+  let strB = {};
+   
+   for (let char of a) {
+       strA[char] = (strA[char] || 0) + 1;
+   }
+   for (let char of b) {
+    strB[char] = (strB[char] || 0) + 1;
+   }
+   console.log(strA, strB)
+   for (let key in strA ) {
+     console.log(strA[key], strB[key])
+     if(!(key in strB)) {
+      console.log(false)
+     }
+    if (strA[key] !== strB[key] ) {
+        console.log(false)
+    }
+
+
+
+
+  };
+}
+
+  isAnagram('iceman', 'cinema');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+
     if (strA.length !== strB.length) {
       return false;
     }
@@ -25,6 +72,4 @@ var isAnagram = function(strA, strB) {
     }
   
     return true;
-  };
-
-  isAnagram('targaryen', 'gratawyen');
+  */

@@ -19,3 +19,10 @@ a.right = c;
 b.left = d;
 b.right = e;
 c.right = f;
+
+//         Tree Diagram
+//               a
+//              / \
+//             b   c
+//            / \   \
+//           d   e   f
