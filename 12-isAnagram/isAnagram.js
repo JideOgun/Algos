@@ -28,22 +28,7 @@ var isAnagram = function(a, b) {
 
   isAnagram('iceman', 'cinema');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Bootcamp solution
   /*
 
     if (strA.length !== strB.length) {
