@@ -141,7 +141,7 @@
     }
  }
 
- var English = makeGreeting('en');
- English('James', 'Brown');
- var Spanish = makeGreeting('es');
- Spanish('Juan', 'Mancilla');
+ var English = makeGreeting('en'); // en variable is passed into language parameter at this time of the creation of this execution context
+ English('James', 'Brown'); // creates new execution context when called - and has access to en variable after makeGreeting function has been popped off the call stack
+ var Spanish = makeGreeting('es'); // es variable is passed into language parameter at this time of the creation of this execution context
+ Spanish('Juan', 'Mancilla'); // creates another new execution context when called - and has access to es variable after second makeGreeting function has been popped off the call stack
