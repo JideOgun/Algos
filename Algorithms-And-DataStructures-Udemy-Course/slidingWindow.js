@@ -1,6 +1,13 @@
 /*
 Write a function called maxSubArraySum which accepts an array of integers and a number called n. 
 The function should calculate the maximum sum of n consecutive elements in the array.
+
+Given an array of integers and a number, write a function called maxSubArraySum, which finds the maximum sum of a subarray
+with the length of the number passed to the function.
+
+Note that a sub array must consist of consecutive elements from the original array. In the first example below, [100, 200, 300] is a subarray
+of the original array but [100, 300] is not.
+
 */
 
 function maxSubArraySum(arr, n) {
