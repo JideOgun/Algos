@@ -130,18 +130,39 @@
 // fs[2]();
 
 // Function Factories
- function makeGreeting (language) {
+//  function makeGreeting (language) {
 
-    return function(firstname, lastname) {
-        if(language === 'en') {
-            console.log('Hello ' + firstname + ' ' + lastname + ' in English');
-        } else if (language === 'es') {
-            console.log('Hola! ' + firstname + ' '  + lastname + ' in Spanish');
-        }
+//     return function(firstname, lastname) {
+//         if(language === 'en') {
+//             console.log('Hello ' + firstname + ' ' + lastname + ' in English');
+//         } else if (language === 'es') {
+//             console.log('Hola! ' + firstname + ' '  + lastname + ' in Spanish');
+//         }
+//     }
+//  }
+
+//  var English = makeGreeting('en'); // en variable is passed into language parameter at this time of the creation of this execution context
+//  English('James', 'Brown'); // creates new execution context when called - and has access to en variable after makeGreeting function has been popped off the call stack
+//  var Spanish = makeGreeting('es'); // es variable is passed into language parameter at this time of the creation of this execution context
+//  Spanish('Juan', 'Mancilla'); // creates another new execution context when called - and has access to es variable after second makeGreeting function has been popped off the call stack
+
+// Functional Programming
+function mapForEach(arr, fn) {
+    var newArr = []
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        newArr.push(fn(element))   
     }
- }
+    return newArr;
+}
 
- var English = makeGreeting('en'); // en variable is passed into language parameter at this time of the creation of this execution context
- English('James', 'Brown'); // creates new execution context when called - and has access to en variable after makeGreeting function has been popped off the call stack
- var Spanish = makeGreeting('es'); // es variable is passed into language parameter at this time of the creation of this execution context
- Spanish('Juan', 'Mancilla'); // creates another new execution context when called - and has access to es variable after second makeGreeting function has been popped off the call stack
+var subtractOne = mapForEach([1, 2, 3, 4, 5], function(element) {
+    return element - 1;
+})
+
+var greaterThanTwo = mapForEach([1, 2, 3, 4, 5], function(element) {
+    return element > 2;
+})
+
+console.log(subtractOne);
+console.log(greaterThanTwo);
