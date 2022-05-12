@@ -22,7 +22,7 @@ function binarySearch (arr, val) {
 
     while (start <= end) {
         let mid = Math.floor((start + end) / 2);
-
+        console.log(start, end, mid);
         if(arr[mid] === val) return arr.indexOf(arr[mid]);
 
         if( val < arr[mid]) {

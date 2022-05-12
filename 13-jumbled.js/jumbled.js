@@ -83,5 +83,5 @@ function jumbledLetters(letters) {
     sortedNumberArray = numArr.sort();
     console.log(sortedNumberArray);
     }
-    var letters = 'reuonnoinfethree';
+    var letters = 'oeisowufxrzohgiettr';
     jumbledLetters(letters);
