@@ -168,17 +168,21 @@
 // console.log(greaterThanTwo);
 
 
-class Student {
-    constructor(firstname, lastname, year) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.grade = year;
-    }
-    fullname() {
-        return `Your name is ${this.firstname} and lastname is ${this.lastname}`
-    }
-}
+// class Student {
+//     constructor(firstname, lastname, year) {
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+//         this.grade = year;
+//     }
+//     fullname() {
+//         return `Your name is ${this.firstname} and lastname is ${this.lastname}`
+//     }
+// }
 
-let firstStudent = new Student("Jide", "Ogunbanjo", 7);
+// let firstStudent = new Student("Jide", "Ogunbanjo", 7);
 
-console.log(firstStudent.fullname());
+// console.log(firstStudent.fullname());
+
+let arr = [[1, {name: "John"}, 3],[1, 2],[1, 3],[1, 4],[1, 5]];
+
+console.log(arr[0][2]);
