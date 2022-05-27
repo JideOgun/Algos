@@ -1,5 +1,3 @@
-
-
 // greet();
 
 // function greet() {
@@ -17,7 +15,6 @@
 //     }
 // }
 
-
 // by value (primitives)
 // var a = 3;
 // var b;
@@ -32,7 +29,6 @@
 //  d = c; // points the same location in memory of c
 //  c =  {food: 'Dior'};
 //  console.log(c, d);
-
 
 // The this key word
 // function a() {
@@ -68,7 +64,7 @@
 // return true if every value in the array has a corresponding squared value in second array else return false
 // make an object for first frequencyCounter1 for the arrA
 // make an object for second frequencyCounter2 for the  arrB
-// loop through arrA using for of, and 
+// loop through arrA using for of, and
 // */
 
 // let fc1 = {};
@@ -99,7 +95,6 @@
 // }
 
 // twoArrays([1, 1, 2, 2,  3], [4, 1, 1, 4, 9])
-
 
 // var firstName = 'Bob';
 // (
@@ -151,7 +146,7 @@
 //     var newArr = []
 //     for (let i = 0; i < arr.length; i++) {
 //         const element = arr[i];
-//         newArr.push(fn(element))   
+//         newArr.push(fn(element))
 //     }
 //     return newArr;
 // }
@@ -166,7 +161,6 @@
 
 // console.log(subtractOne);
 // console.log(greaterThanTwo);
-
 
 // class Student {
 //     constructor(firstname, lastname, year) {
@@ -183,6 +177,169 @@
 
 // console.log(firstStudent.fullname());
 
-let arr = [[1, {name: "John"}, 3],[1, 2],[1, 3],[1, 4],[1, 5]];
+// class Shape {
+//   constructor(name, sides, sideLength) {
+//     this.name = name;
+//     this.sides = sides;
+//     this.sideLength = sideLength;
+//   }
 
-console.log(arr[0][2]);
+//   calcPerimeter() {
+//     return this.sides * this.sideLength;
+//   }
+// }
+
+// var oldSquare = new Shape("Square", 4, 5);
+// // console.log(square.calcPerimeter());
+// var Triangle = new Shape("Triangle", 3, 3);
+// // console.log(Triangle.calcPerimeter());
+
+// class Square extends Shape {
+//   constructor(name, sides, sideLength) {
+//     super(name, sides, sideLength);
+//     this.name = "Square";
+//     this.sides = 4;
+//     this.sideLength = 3;
+//   }
+
+//   calcArea(sideLength) {
+//     return sideLength * sideLength;
+//   }
+// }
+// var newSquare = new Square();
+// console.log(newSquare.calcArea(5));
+// console.log(newSquare.calcPerimeter())
+
+// // Encapsulation
+//  class Employee {
+//      setEmpDetails(name, id, phoneNo) {
+//          this.name = name;
+//          this.id = id;
+//          this.phoneNo = phoneNo;
+//      }
+
+//      getEmpName() {
+//          return this.name;
+//      }
+
+//      getEmpId() {
+//          return this.id;
+//      }
+
+//      getEmpPhoneNo() {
+//          return this.phoneNo
+//      }
+//  }
+//  var emp1 = new Employee();
+
+// emp1.setEmpDetails('John', 01, 5128250309);
+// console.log(emp1.getEmpName());
+// console.log(emp1.getEmpId())
+// console.log(emp1.getEmpPhoneNo())
+
+// function caesarCipher(s, k) {
+//   // Write your code here
+//   /*
+//   Pseudocode
+//   loop over the string s,
+//   find the charCode at i\
+//   set the char to be the charCode(i + k)
+//   update s to be new char
+//   return s
+
+//   */
+//   if (k === 0) return s;
+//   var newCode;
+//   var diffnewCode;
+//   for (var i = 0; i < s.length; i++) {
+//     if (
+//       (s.charCodeAt(i) >= 65 && s.charCodeAt(i) <= 90) ||
+//       (s.charCodeAt(i) >= 97 && s.charCodeAt(i) <= 122)
+//     ) {
+//       var code = s.charCodeAt(i);
+//       //  console.log(code)
+//       newCode = code + k;
+//       console.log(newCode + ` ${s[i]} ` + "codes");
+//       if (newCode > 90 && newCode <= 96) {
+//         newCode = newCode - 26;
+//         console.log("A new code - " + newCode);
+//       } else if (newCode > 122 && code >= 65 && code <= 90) {
+//         diffnewCode = newCode - 90;
+//         if (diffnewCode % 26 === 0) {
+//           newCode = 90;
+//         } else {
+//           newCode = 64 + (diffnewCode % 26);
+//         }
+//       } else if (newCode <= 122 && newCode > 90 && code >= 65 && code <= 90) {
+//         diffnewCode = newCode - 90;
+//         if (diffnewCode % 26 === 0) {
+//           newCode = 90;
+//         } else {
+//           newCode = 64 + (diffnewCode % 26);
+//         }
+//         if (newCode === 91) newCode = 90;
+//       } else if (newCode > 122) {
+//         diffnewCode = newCode - 122;
+//         if (diffnewCode % 26 === 0) {
+//           newCode = 122;
+//         } else {
+//           newCode = 96 + (diffnewCode % 26);
+//         }
+
+//         console.log("B new code - " + newCode);
+//       }
+//     } else {
+//       newCode = s.charCodeAt(i);
+//       // console.log('new code - ' + newCode)
+//     }
+//     var newStr = (newStr || "") + String.fromCharCode(newCode);
+//   }
+//   console.log(newStr);
+//   return newStr;
+// }
+
+// console.log(
+//   caesarCipher(
+//     "DNFjxo?b5h*5<LWbgs6?V5{3M].1hG)pv1VWq4(!][DZ3G)riSJ.CmUj9]7Gzl?VyeJ2dIPEW4GYW*scT8(vhu9wCr]q!7eyaoy.",
+//     45
+//   )
+// );
+
+// function matchingBrackets(s) {
+//   // Write your code here
+//   /*
+//  Pseudocode 
+//     */
+
+//   let bracketObj = {
+//     "}": "{",
+//     "]": "[",
+//     ")": "(",
+//   };
+
+//   const stack = [];
+
+//   if (s[0] === "}" || s[0] === ")" || s[0] === "]") return "NO";
+//   for (let i = 0; i < s.length; i++) {
+//     if (s[i] === "{" || s[i] === "[" || s[i] === "(") {
+//       stack.push(s[i]);
+//       console.log('pushing into ' + stack)
+//     } else {
+//       console.log('key - ' + s[i], bracketObj[s[i]])
+//       if (stack[stack.length - 1] === bracketObj[s[i]]) {
+//         stack.pop();
+//         console.log('removing from ' + stack)
+//       } else {
+//         stack.push(s[i]);
+//       }
+//     }
+//   }
+//   console.log(stack, + 'this is the length - ' + stack.length);
+//   if (!stack.length) {
+//     return "YES";
+//   } else {
+//     return "NO";
+//   }
+// }
+
+console.log(matchingBrackets("{(([])[])[]}"));

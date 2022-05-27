@@ -2,7 +2,7 @@
 /*
 Write a function called sumZero which accepts a sorted array of integers. The function should find the first pair 
 where the sum is zero.
-Return an rray that includes both values that sum to zero or undefined if a pair does not exist.
+Return an array that includes both values that sum to zero or undefined if a pair does not exist.
 
 Note: Array has to be sorted or it wont work
 */
