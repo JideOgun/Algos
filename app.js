@@ -342,4 +342,61 @@
 //   }
 // }
 
-console.log(matchingBrackets("{(([])[])[]}"));
+// console.log(matchingBrackets("{(([])[])[]}"));
+
+function removeZeroes (num) {
+    var newNum = parseFloat(num);
+console.log(newNum);
+var str = newNum.toString()
+console.log(str);
+return str;
+}
+
+removeZeroes('006.050500');
+
+const combineArray = (arr1, arr2) => {
+    if(arr1[0] === arr2[0]) {
+        return arr1;
+    }
+    return arr1.concat(arr2)
+};
+
+console.log(combineArray(['second'], ['second']));
+
+var url = 'https://samples.openweathermap.org/data/2.5/weather?q=London&appid=b1b15e88fa797225412429c1c50c122a1'
+function callApi () {
+fetch(url)
+.then(function(res) {
+    return res.json()
+})
+.then(data => console.log(data))
+}
+callApi();
+
+
+
+let boatLaunch = false;
+let gasLevel = 700;
+let crewmateStatus = true;
+let instrumentStatus = 'green';
+if (gasLevel >= 1000) {
+console.log('Gas level is good.');
+boatLaunch = true;
+} else {
+console.log('WARNING: Not enough gas!');
+boatLaunch = false;
+}
+if (crewmateStatus && instrumentStatus === 'green'){
+console.log('Crewmates and instruments are good');
+boatLaunch = true;
+} else {
+console.log('WARNING: Crewmates or instruments are not good.');
+boatLaunch = false;
+}
+if(boatLaunch) {
+console.log('Ready! Set! Go!');
+console.log('Bon voyage!');
+} else {
+console.log('Nope not ready!');
+}
+
