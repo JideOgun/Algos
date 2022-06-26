@@ -308,7 +308,7 @@
 // function matchingBrackets(s) {
 //   // Write your code here
 //   /*
-//  Pseudocode 
+//  Pseudocode
 //     */
 
 //   let bracketObj = {
@@ -344,59 +344,133 @@
 
 // console.log(matchingBrackets("{(([])[])[]}"));
 
-function removeZeroes (num) {
-    var newNum = parseFloat(num);
-console.log(newNum);
-var str = newNum.toString()
-console.log(str);
-return str;
-}
+// function removeZeroes (num) {
+//     var newNum = parseFloat(num);
+// console.log(newNum);
+// var str = newNum.toString()
+// console.log(str);
+// return str;
+// }
 
-removeZeroes('006.050500');
+// removeZeroes('006.050500');
 
-const combineArray = (arr1, arr2) => {
-    if(arr1[0] === arr2[0]) {
-        return arr1;
-    }
-    return arr1.concat(arr2)
-};
+// const combineArray = (arr1, arr2) => {
+//     if(arr1[0] === arr2[0]) {
+//         return arr1;
+//     }
+//     return arr1.concat(arr2)
+// };
 
-console.log(combineArray(['second'], ['second']));
+// console.log(combineArray(['second'], ['second']));
 
-var url = 'https://samples.openweathermap.org/data/2.5/weather?q=London&appid=b1b15e88fa797225412429c1c50c122a1'
-function callApi () {
-fetch(url)
-.then(function(res) {
-    return res.json()
-})
-.then(data => console.log(data))
-}
-callApi();
+// var url = 'https://samples.openweathermap.org/data/2.5/weather?q=London&appid=b1b15e88fa797225412429c1c50c122a1'
+// function callApi () {
+// fetch(url)
+// .then(function(res) {
+//     return res.json()
+// })
+// .then(data => console.log(data))
+// }
+// callApi();
+
+// let boatLaunch = false;
+// let gasLevel = 700;
+// let crewmateStatus = true;
+// let instrumentStatus = 'green';
+// if (gasLevel >= 1000) {
+// console.log('Gas level is good.');
+// boatLaunch = true;
+// } else {
+// console.log('WARNING: Not enough gas!');
+// boatLaunch = false;
+// }
+// if (crewmateStatus && instrumentStatus === 'green'){
+// console.log('Crewmates and instruments are good');
+// boatLaunch = true;
+// } else {
+// console.log('WARNING: Crewmates or instruments are not good.');
+// boatLaunch = false;
+// }
+// if(boatLaunch) {
+// console.log('Ready! Set! Go!');
+// console.log('Bon voyage!');
+// } else {
+// console.log('Nope not ready!');
+// }
+
+// class Inventory {
+//   constructor() {
+//     this.collection = {};
+//   }
+
+//   addShirt(params) {
+//     if (!this.collection.shirt) {
+//       this.collection.shirt = [params];
+//     } else {
+//       this.collection.shirt.push(params);
+//     }
+
+//     return this.collection.shirt;
+//   }
+
+//   addTrousers(params) {
+//     if (!this.collection.trousers) {
+//       this.collection.trousers = [params];
+//     } else {
+//       this.collection.trousers.push[params];
+//     }
+
+//     return this.collection.trousers;
+//   }
+
+//   getList() {
+//     return this.collection;
+//   }
+
+//   removeShirt(params) {
+//       console.log(params)
+     
+//     for(var i = 0; i < this.collection.shirt.length; i++) {
+//       console.log('ffff')
+//       if(this.collection.shirt[i] === params) {
+//           console.log('this is params' + params)
+//           return this.collection.shirt.filter((el) => el !== params);
+//       }
+//     }   
+//   }
+// }
+
+// const inventory = new Inventory();
+// inventory.addShirt("long sleeve polo")
+// console.log(inventory.addShirt("Polo"));
+// console.log(inventory.addTrousers("shorts"));
+// console.log(inventory.getList());
+// console.log(inventory.removeShirt('Polo'))
+
+// const max = () => {
+// var arr = ['Green', 'Green', 'Green', 'Green', 'Green', 'Red', 'Red', 'Red', 'Red', 'Red', 'Red', 'Blue', 'Blue', 'Blue', 'Yellow']
+
+// var obj = {};
+
+// for (let i = 0; i < arr.length; i++) {
+//     const char = arr[i];
+
+//     obj[char] = (obj[char] || 0) + 1
+    
+// }
+// console.log(obj)
+
+// let max = 0;
+// for (const key in obj) {
+//     if(obj[key] > max) {
+//        max = obj[key]
+//     }
+  
+// }
+// return max
+// }
+// console.log(max())
 
 
 
-let boatLaunch = false;
-let gasLevel = 700;
-let crewmateStatus = true;
-let instrumentStatus = 'green';
-if (gasLevel >= 1000) {
-console.log('Gas level is good.');
-boatLaunch = true;
-} else {
-console.log('WARNING: Not enough gas!');
-boatLaunch = false;
-}
-if (crewmateStatus && instrumentStatus === 'green'){
-console.log('Crewmates and instruments are good');
-boatLaunch = true;
-} else {
-console.log('WARNING: Crewmates or instruments are not good.');
-boatLaunch = false;
-}
-if(boatLaunch) {
-console.log('Ready! Set! Go!');
-console.log('Bon voyage!');
-} else {
-console.log('Nope not ready!');
-}
 
