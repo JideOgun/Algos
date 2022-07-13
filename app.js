@@ -472,5 +472,18 @@
 // console.log(max())
 
 
-
+function makeInputVerifier(minimum, maximum) {
+    // write your code here
+     const verify = (inputValue) => {
+        if(inputValue < minimum) {
+            return 'input is less than minimum value'
+        } else if (inputValue > minimum && inputValue < maximum) {
+            return 'input is in range'
+        } else if(inputValue > maximum) {
+            return 'input is more than maximum value'
+        }
+    }
+    return verify(7);
+  }
+  console.log(makeInputVerifier(5, 10))
 
